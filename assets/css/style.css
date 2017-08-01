@@ -1,9 +1,8 @@
 header {
 	float: left;
 	padding: 20px;
-
-  	margin-top: 20px;
-  	margin-left: 20px;
+  	margin-top: 30px;
+    margin-left: 60px;
 	text-align: center;
 	background: #4aaaa5;
 	color: white;
@@ -11,23 +10,9 @@ header {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 150%;
-  color: #777777;
-  
-  width: 960px;
-  margin: 0 auto;
-  background: cornflowerblue;
-  background-image: url("./assets/images/background.png");
-  background-repeat: repeat-x;
-}
-
 p {
 	margin: 0 20px;
+	color: #777777;
 }
 
 h2 {
@@ -38,24 +23,39 @@ h2 {
 
 h3 {
 	color: #4aaaa5;
+	border-bottom-style: solid;
+	margin: 10px 0;
 }
 
 #footer {
 	text-align: center;
+	background: #666;
+    border-top-style: solid;
+    border-top-color: #4aaaa5;
+    border-width: 6px;
+    padding: 20px 0px;
+    position:fixed;
+   	left:0px;
+   	bottom:0px;
+   	width:100%;
+   	color: #777777;
 }
 
 .top_section {
 	background: white;
 	width: 960px;
   	margin: 0 auto;
+  	padding: 0;
+  	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  	font-size: 18px;
+  	line-height: 150%;	  
 }
+
 #left {
 	float: right;
 	width: 100px;
 	text-align: center;
   	margin-bottom: 20px;
-  	color: #333;
-  	
   	margin-top: 20px;
   	color: #777777;
 }
@@ -65,8 +65,6 @@ h3 {
 	width: 100px;
 	text-align: center;
   	margin-bottom: 20px;
-  	color: #333;
-  	
   	margin-top: 20px;
   	color: #777777;
 }
@@ -76,50 +74,59 @@ h3 {
 	width: 100px;
 	text-align: center;
   	margin-bottom: 20px;
-  	color: #333;
-  	
   	margin-top: 20px;
   	color: #777777;
 }
 
 .container {
-  clear: both;
-  overflow: auto;
-  width: 960px;
-  margin: 0 auto;
-  background: white;
-
+	clear: both;
+	overflow: auto;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 150%;
+	background-image: url("../images/background.png");
+	background-repeat: repeat-x;
+	border-top-style: solid;
+    border-top-color: #dddddd;
 }
 
 .contact_info {
 	padding: 10px;
-
 }
 
 #main-bio,
 #connect,
 #photo_me {
-  float: left;
+	float: left;
 }
 
 #main_bio {
-  width: 70%;
-  font-size: 12px;
-  margin: 0;
-  float: left;
-  background: #ffffff;
+	width: 650px;
+	font-size: 12px;
+	margin-top: 30px;
+    margin-left: 60px;
+	float: left;
+	background: #ffffff;
+	margin-bottom: 30px;
 }
 
 #connect {
-  width: 30%;
-  float: left;
-  text-align: center;
+	width: 270;
+	float: left;
+	text-align: center;
+	background: white;
+	margin-left: 40px;
+	margin-top: 30px;
+	padding: 10px;
 }
 
 #photo_me {
-  width: 200px;
-  height: 200px;
-  margin: 0 20px;
+	width: 200px;
+ 	height: 200px;
+  	margin: 0 20px;
 }
 
 #soverflow, 
