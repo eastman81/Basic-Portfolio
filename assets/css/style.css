@@ -1,35 +1,69 @@
 header {
 	float: left;
-	padding: 20px;
-  	margin-top: 30px;
+  	margin-top: 40px;
     margin-left: 60px;
 	text-align: center;
 	background: #4aaaa5;
 	color: white;
-	padding: 10px;
+	padding: 20px;
+	font-weight: bold;
+	font-size: 20px;
 	font-family: Georgia, "Times New Roman", Times, serif;
+
+}
+
+.top_section:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+html {
+	background-image: url("../images/background.png");
+	background-repeat: repeat repeat;
 }
 
 p {
 	margin: 0 20px;
 	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 h2 {
 	margin: 20px;
+	padding-bottom: 10px;
 	color: #4aaaa5;
 	border-bottom-style: solid;
+	border-bottom-color: #dddddd;
+	border-bottom-width: 2px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 h3 {
 	color: #4aaaa5;
 	border-bottom-style: solid;
+	border-bottom-color: #dddddd;
+	border-bottom-width: 1px;
 	margin: 10px 0;
+	padding-bottom: 10px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h4 {
+	color: #777777;
+   	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+   	font-size: 14px;
 }
 
 #footer {
 	text-align: center;
-	background: #666;
+	background: #666666;
     border-top-style: solid;
     border-top-color: #4aaaa5;
     border-width: 6px;
@@ -39,6 +73,12 @@ h3 {
    	bottom:0px;
    	width:100%;
    	color: #777777;
+   	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+   	font-size: 14px;
+}
+
+.highest {
+	background: white;
 }
 
 .top_section {
@@ -54,7 +94,7 @@ h3 {
 #left {
 	float: right;
 	width: 100px;
-	text-align: center;
+	text-align: right;
   	margin-bottom: 20px;
   	margin-top: 20px;
   	color: #777777;
@@ -63,7 +103,7 @@ h3 {
 #middle {
 	float: right;
 	width: 100px;
-	text-align: center;
+	text-align: right;
   	margin-bottom: 20px;
   	margin-top: 20px;
   	color: #777777;
@@ -72,7 +112,7 @@ h3 {
 #right {
 	float: right;
 	width: 100px;
-	text-align: center;
+	text-align: right;
   	margin-bottom: 20px;
   	margin-top: 20px;
   	color: #777777;
@@ -86,19 +126,32 @@ h3 {
 	padding: 0;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 18px;
-	line-height: 150%;
-	background-image: url("../images/background.png");
-	background-repeat: repeat-x;
+	line-height: 150%;	
+	
+}
+
+.container:after {
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.big_container {
 	border-top-style: solid;
     border-top-color: #dddddd;
+    border-top-width: 2px;
 }
 
 .contact_info {
-	padding: 10px;
+	padding: 0;
+	float: right;
+	margin-top: 40px
 }
 
 #main-bio,
-#connect,
+
 #photo_me {
 	float: left;
 }
@@ -115,8 +168,7 @@ h3 {
 
 #connect {
 	width: 270;
-	float: left;
-	text-align: center;
+	float: right;
 	background: white;
 	margin-left: 40px;
 	margin-top: 30px;
@@ -139,16 +191,22 @@ h3 {
 .top_row {
 	clear: both;
   	overflow: auto;
+  	font-size: 14px;
+  	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .middle_row {
 	clear: both;
   	overflow: auto;
+  	font-size: 14px;
+  	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .bottom_row {
 	clear: both;
   	overflow: auto;
+  	font-size: 14px;
+  	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #hangman {
@@ -164,16 +222,19 @@ h3 {
 #trivia {
 	float: left;
 	width: 50%;
+	margin-top: 20px;
 }
 
 #rutgers {
 	float: left;
 	width: 50%;
+	margin-top: 20px;
 }
 
 #rock {
 	float: left;
 	width: 50%;
+	margin-top: 20px;
 }
 
 #img1, #img2, #img3, #img4, #img5 {
@@ -188,15 +249,40 @@ h3 {
     text-align: center;
     position: absolute;
     padding: 10px;
+    padding-bottom: 16px;
     width: 230px;
     height: 20px;
     text-align: center;
-	bottom: 254px;
-    right: 657px;
+	bottom: 264px;
+    right: 789px;
 }
 
 #rp {
+	background: #4aaaa5;
+    color: white;
+    text-align: center;
+    position: absolute;
+    padding: 10px;
+    padding-bottom: 16px;
+    width: 230px;
+    height: 20px;
+    text-align: center;
+	bottom: 264px;
+    right: 464px;
+}
 
+#triv {
+	background: #4aaaa5;
+    color: white;
+    text-align: center;
+    position: absolute;
+    padding: 10px;
+    padding-bottom: 16px;
+    width: 230px;
+    height: 20px;
+    text-align: center;
+    bottom: 10px;
+    right: 789px;
 }
 
 #rut {
@@ -205,12 +291,47 @@ h3 {
     text-align: center;
     position: absolute;
     padding: 10px;
+    padding-bottom: 16px;
     width: 230px;
     height: 20px;
     text-align: center;
-    bottom: 20px;
-    right: 332px;
+    bottom: 10px;
+    right: 464px;
 }
 
+#rck {
+	background: #4aaaa5;
+    color: white;
+    text-align: center;
+    position: absolute;
+    padding: 10px;
+    padding-bottom: 16px;
+    width: 230px;
+    height: 20px;
+    text-align: center;
+    bottom: -232px;
+    right: 789px;
+}
 
+#input {
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
 
+.input_borders {
+	padding: 4px;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 1px;
+}
+
+#submit_button {
+	color: white;
+	background: #4aaaa5;
+	font-size: 12px;
+    padding: 6px 20px;
+    border-style: hidden;
+}
